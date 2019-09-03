@@ -32,8 +32,9 @@ class HomeView extends React.Component {
         return (
             <section id="intro_main">
             <div class="head-name-skills">
-                <h3 class="center-header h-skills">Hi, I'm Selorm. Nice to meet you</h3>
-                <p class="desc-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <h2 class="center-header h-skills">Hi, I'm Selorm. Nice to meet you</h2>
+                <p class="desc-sub-title">I am a software engineer with a few years of experience developing application with dotnet technology
+                I have experience in development of API's and infrastructure and also experience with minimalistic user interface designs and domain driven design</p>
             </div>
                 {/* <hr class="hr-skills"/> */}
                 <div class="skills-block">
@@ -111,6 +112,17 @@ class HomeView extends React.Component {
                                     <i class="ion-ios-star text-warning"></i>
                                     <i class="ion-ios-star text-warning"></i>
                                     <i class="ion-ios-star text-warning"></i>
+                                </span>
+                            </li>
+                            <li class="li-skill">
+                            
+                                <span class="skill-name">Node JS</span>
+                                <span class="ability-score">
+                                    <i class="ion-ios-star text-warning"></i>
+                                    <i class="ion-ios-star-outline text-warning"></i>
+                                    <i class="ion-ios-star-outline text-warning"></i>
+                                    <i class="ion-ios-star-outline text-warning"></i>
+                                    <i class="ion-ios-star-outline text-warning"></i>
                                 </span>
                             </li>
                             <li class="li-skill">
