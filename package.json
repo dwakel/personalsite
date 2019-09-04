@@ -1,13 +1,13 @@
 {
   "name": "personalsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "A personal portfolio site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Selorm Avoke",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
