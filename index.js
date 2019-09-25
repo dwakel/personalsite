@@ -2,27 +2,27 @@
 
 const e = React.createElement;
 
-let mainCover = document.getElementById('cover_main');
-mainCover.addEventListener('wheel', () =>{
-    return trans();
-});
-function trans() {
-    console.log("success");
-    let x = document.getElementById('cover_layer');
-    x.classList.add('slide-in');
+// let mainCover = document.getElementById('cover_main');
+// mainCover.addEventListener('wheel', () =>{
+//     return trans();
+// });
+// function trans() {
+//     console.log("success");
+//     let x = document.getElementById('cover_layer');
+//     x.classList.add('slide-in');
 
-    let v = document.getElementById('brand_name');
-    v.classList.remove('m-hide');
-    v.classList.add('m-slide-in');  
+//     let v = document.getElementById('brand_name');
+//     v.classList.remove('m-hide');
+//     v.classList.add('m-slide-in');  
 
-    let k = document.getElementById('cover_desc');
-    k.classList.remove('m-hide');
-    k.classList.add('m-slide-in');  
+//     let k = document.getElementById('cover_desc');
+//     k.classList.remove('m-hide');
+//     k.classList.add('m-slide-in');  
 
-    let b = document.getElementById('social-media');
-    b.classList.remove('m-hide');
-    b.classList.add('m-slide-in');  
-}
+//     let b = document.getElementById('social-media');
+//     b.classList.remove('m-hide');
+//     b.classList.add('m-slide-in');  
+// }
 
 class HomeView extends React.Component {
     constructor() {

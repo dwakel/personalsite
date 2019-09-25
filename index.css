@@ -61,18 +61,26 @@ ul {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     
-}
+}/* renamed from cover_layer*/
 .slide-in {
     /* transform: translateX(100px); */
     -webkit-transition: 2s; /* Safari */
     transition: 2s;
     transition-timing-function: ease;
-    background-color: #4641ffbd;
+    background-color: rgba(5, 0, 161, .74);
+    opacity: .57;
     position: relative;
     width: 100%;
     height: 100%;
 }
-
+#color_cover {
+    background-color: rgba(5, 0, 161, .74);
+    opacity: .57;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 110vh;
+}
 
 #brand_name {
     grid-row: 2 / 3;
@@ -94,8 +102,8 @@ ul {
     transition-timing-function: ease;
     grid-row: 2 / 3;
     font-size: 10vw;
-    font-family: cursive;
-    color: #fce4f8de;
+    font-family: Curlz MT;
+    color: #ffffff;
 }
 .subhead-skills {
     text-align: center;
@@ -107,7 +115,7 @@ ul {
     padding-left: 45%;
 }
 .m-hide {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 #intro_main {
