@@ -1,5 +1,6 @@
 'use strict';
 
+
 const e = React.createElement;
 
 // let mainCover = document.getElementById('cover_main');
@@ -155,51 +156,79 @@ class HomeView extends React.Component {
     }
 }
 
-class GalleryView extends React.Component {
+class ProjectItems extends React.Component {
+    state = { show: [false, false, false, false] };
+    modalData = null;
     constructor() {
         super();
     }
+    showModal = (id) => {
+        this.setState({ show: true });
+        switch (id){
+            case 1:
+                this.modalData = 1;
+                break;
+            case 2:
+                this.modalData = 2
+                break;
+        }
+    };
+    hideModal = () => {
+        this.setState({ show[]: false });
+    };
+    
     render() {
         return (
-            <section id="gallery_main">
-                <div id="gallery_card">
-                
-                    <div id="gallery_layer">
+            <section id="project_main">
+                <Modal show={this.state.show} handleClose={this.hideModal}>
+                   <h1>Case 1</h1>
+                </Modal>
+                <Modal show={this.state.show} handleClose={this.hideModal}>
+                   <h1>Case 2</h1>
+                </Modal>
+                <div class="head-name-skills">
+                <h3 class="center-header black-h h-skills">Things I've made.</h3>
+                <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
+            </div>
+                <div class="proj-img project-block-1" onClick={this.showModal(1)}>
+                    <div class="proj-color-cover color-cover-1">
+                        <h1>Voice Chess</h1>
+                    </div>
+                </div>
+                <div class="proj-img project-block-2" onClick={this.showModal(2)}>
+                    <div class="proj-color-cover color-cover-2">
+                        <h1>GPS Tracker</h1>
                         
-                        <div class="gallery-dets">
-                            <div class="gallery-head gallery-item-head">
-                                <h4 class="gallery-subheading">Photos from my work</h4>
-                                <h2 class="gallery-heading">See & Explore</h2>
-                            </div>
-                            <div class="gallery-item gallery-item-1">
-                                <img class="gallery-image" src="img/1.png" alt="warrior"/>
-                                <img class="gallery-image" src="img/10.jpg" alt="warrior"/>
-                                <img class="gallery-image" src="img/8.png" alt="warrior"/>
-                                <img class="gallery-image" src="img/5.png" alt="warrior"/>                    
-                            </div>
-                            <div class="gallery-item gallery-item-2">
-                                <img class="gallery-image" src="img/3.png" alt="warrior"/>
-                                <img class="gallery-image" src="img/3.png" alt="warrior"/>
-                                <div class="gallery-video">
-                                    <video class="gallery-image" muted loop autoplay="autoplay">
-                                        <source src="img/cover-vid.mp4" type="video/mp4"/>
-                                    </video>
-                                </div>
-                                <img class="gallery-image" src="img/3.png" alt="warrior"/>
-                            </div>
-                            <div class="gallery-item gallery-item-3">
-                                <img class="gallery-image" src="img/10.jpg" alt="warrior"/>
-                                <img class="gallery-image" src="img/4.jpg" alt="warrior"/>
-                                <img class="gallery-image" src="img/7.jpg" alt="warrior"/>
-                                <img class="gallery-image" src="img/3.png" alt="warrior"/>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="proj-img project-block-3" onClick={this.showModal(3)}>
+                    <div class="proj-color-cover color-cover-3">
+                        <h1>FayaPay</h1>
+                    </div>
+                </div>
+                <div class="proj-img project-block-4" onClick={this.showModal(4)}>
+                    <div class="proj-color-cover color-cover-4">
+                        <h1>selormavoke.com</h1>
                     </div>
                 </div>
             </section>
         );
-    }  
+    }
 }
 
+const Modal = ({ handleClose, show, children }) => {
+    const showHideClassName = show ? "modal display-block" : "modal display-none";
+    
+    return(
+        <div className={showHideClassName}>
+            <section className="modal-main">
+                {children}
+                
+                <button onClick={handleClose}>close</button>
+            </section>
+        </div>
+    );
+};
+
 const domContainer = document.querySelector('#page_containers');
-ReactDOM.render(e(HomeView), domContainer);
+ReactDOM.render(e(ProjectItems), domContainer);
