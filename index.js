@@ -1,6 +1,5 @@
 'use strict';
 
-
 const e = React.createElement;
 
 // let mainCover = document.getElementById('cover_main');
@@ -157,56 +156,76 @@ class HomeView extends React.Component {
 }
 
 class ProjectItems extends React.Component {
-    state = { show: [false, false, false, false] };
-    modalData = null;
     constructor() {
         super();
+        this.state = {
+            state1: false,
+            state2: false
+        };
     }
-    showModal = (id) => {
-        this.setState({ show: true });
-        switch (id){
-            case 1:
-                this.modalData = 1;
-                break;
-            case 2:
-                this.modalData = 2
-                break;
-        }
-    };
+    //states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
+    // modalData = null;
+    // setTrueState = function(state){
+    //     state = true;
+    //     return state;
+    // }
+    update(e){
+        // this.setstate({
+        //     state1: this.refs.state1.value = true,
+        //     state2: this.refs.state2.value = true
+        // });
+    }
+   
+    // showModal1 = () => {
+        
+    //     this.setState(this.setTrueState(this.states.state1.show));
+    // };
+    // showModal2 = () => {
+       
+    //     this.setState(this.states[1] = true);
+    // };
+    // showModal3 = () => {
+        
+    //     this.setState(this.states[2] = true);
+    // };
+    // showModal4 = () => {
+        
+    //     this.setState(this.states[3] = true);
+    // };
     hideModal = () => {
-        this.setState({ show[]: false });
+        //this.setState({ show: false });
     };
     
     render() {
         return (
             <section id="project_main">
-                <Modal show={this.state.show} handleClose={this.hideModal}>
+                {/* <Modal show={this.states.state1} handleClose={this.hideModal}>
                    <h1>Case 1</h1>
-                </Modal>
-                <Modal show={this.state.show} handleClose={this.hideModal}>
+                </Modal> */}
+                {/* <Modal show={this.state.show} handleClose={this.hideModal}>
                    <h1>Case 2</h1>
-                </Modal>
+                </Modal> */}
                 <div class="head-name-skills">
                 <h3 class="center-header black-h h-skills">Things I've made.</h3>
                 <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
             </div>
-                <div class="proj-img project-block-1" onClick={this.showModal(1)}>
+                <div class="proj-img project-block-1" onClick={this.update.bind(this)}>
                     <div class="proj-color-cover color-cover-1">
                         <h1>Voice Chess</h1>
                     </div>
                 </div>
-                <div class="proj-img project-block-2" onClick={this.showModal(2)}>
+                <div class="proj-img project-block-2" onClick={this.showModal2}>
                     <div class="proj-color-cover color-cover-2">
                         <h1>GPS Tracker</h1>
                         
                     </div>
                 </div>
-                <div class="proj-img project-block-3" onClick={this.showModal(3)}>
+                <div class="proj-img project-block-3" onClick={this.showModal3}>
                     <div class="proj-color-cover color-cover-3">
                         <h1>FayaPay</h1>
                     </div>
                 </div>
-                <div class="proj-img project-block-4" onClick={this.showModal(4)}>
+                <div class="proj-img project-block-4" onClick={this.showModal4}>
                     <div class="proj-color-cover color-cover-4">
                         <h1>selormavoke.com</h1>
                     </div>
@@ -223,7 +242,6 @@ const Modal = ({ handleClose, show, children }) => {
         <div className={showHideClassName}>
             <section className="modal-main">
                 {children}
-                
                 <button onClick={handleClose}>close</button>
             </section>
         </div>
