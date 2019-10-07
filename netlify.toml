@@ -2,3 +2,8 @@
 base = "personalsite/"
 publish = "personalsite/"
 command = "npm build"
+
+[[redirects]]
+from = "/*"
+to = "public/index.html"
+status = 200
