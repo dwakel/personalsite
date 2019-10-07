@@ -1,14 +1,6 @@
 'use strict';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var e = React.createElement;
+const e = React.createElement;
 
 // let mainCover = document.getElementById('cover_main');
 // mainCover.addEventListener('wheel', () =>{
@@ -53,7 +45,7 @@ var e = React.createElement;
 //                                 <p class="desc-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 //                                 <h4 class="sub-desc-head">Things I do</h4>
 //                             <li class="li-skill">
-
+                                
 //                                 <span class="skill-name">HTML</span>
 //                                 <span class="ability-score">
 //                                     <i class="ion-ios-star text-warning"></i>
@@ -112,7 +104,7 @@ var e = React.createElement;
 //                                 <p class="desc-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 //                                 <h4 class="sub-desc-head">What I build with</h4>
 //                             <li class="li-skill">
-
+                            
 //                                 <span class="skill-name">C#/ASP.Net Core</span>
 //                                 <span class="ability-score">
 //                                     <i class="ion-ios-star text-warning"></i>
@@ -123,7 +115,7 @@ var e = React.createElement;
 //                                 </span>
 //                             </li>
 //                             <li class="li-skill">
-
+                            
 //                                 <span class="skill-name">Node JS</span>
 //                                 <span class="ability-score">
 //                                     <i class="ion-ios-star text-warning"></i>
@@ -150,36 +142,26 @@ var e = React.createElement;
 //                                 <span class="skill-name other">UWP</span>
 //                                 <span class="skill-name other">WPF</span>
 //                                 <span class="skill-name other">Angular</span>
-
+                                
 //                             </li>
-
+                            
 //                         </ul>
 //                 </div>
 //                 </div>
 //             </section>
-
-
+           
+                
 //         );
 //     }
 // }
 
-var ProjectItems = function (_React$Component) {
-    _inherits(ProjectItems, _React$Component);
-
-    function ProjectItems() {
-        _classCallCheck(this, ProjectItems);
-
-        var _this = _possibleConstructorReturn(this, (ProjectItems.__proto__ || Object.getPrototypeOf(ProjectItems)).call(this));
-
-        _this.hideModal = function () {
-            //this.setState({ show: false });
-        };
-
-        _this.state = {
+class ProjectItems extends React.Component {
+    constructor() {
+        super();
+        this.state = {
             state1: false,
             state2: false
         };
-        return _this;
     }
     //states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
     // modalData = null;
@@ -187,135 +169,84 @@ var ProjectItems = function (_React$Component) {
     //     state = true;
     //     return state;
     // }
-
-
-    _createClass(ProjectItems, [{
-        key: "update",
-        value: function update(e) {}
+    update(e){
         // this.setstate({
         //     state1: this.refs.state1.value = true,
         //     state2: this.refs.state2.value = true
         // });
+    }
+   
+    // showModal1 = () => {
+        
+    //     this.setState(this.setTrueState(this.states.state1.show));
+    // };
+    // showModal2 = () => {
+       
+    //     this.setState(this.states[1] = true);
+    // };
+    // showModal3 = () => {
+        
+    //     this.setState(this.states[2] = true);
+    // };
+    // showModal4 = () => {
+        
+    //     this.setState(this.states[3] = true);
+    // };
+    hideModal = () => {
+        //this.setState({ show: false });
+    };
+    
+    render() {
+        return (
+            <section id="project_main">
+                {/* <Modal show={this.states.state1} handleClose={this.hideModal}>
+                   <h1>Case 1</h1>
+                </Modal> */}
+                {/* <Modal show={this.state.show} handleClose={this.hideModal}>
+                   <h1>Case 2</h1>
+                </Modal> */}
+                <div class="head-name-skills">
+                <h3 class="center-header black-h h-skills">Things I've made.</h3>
+                <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
+            </div>
+                <div class="proj-img project-block-1" onClick={this.update.bind(this)}>
+                    <div class="proj-color-cover color-cover-1">
+                        <h1>Voice Chess</h1>
+                    </div>
+                </div>
+                <div class="proj-img project-block-2" onClick={this.showModal2}>
+                    <div class="proj-color-cover color-cover-2">
+                        <h1>GPS Tracker</h1>
+                        
+                    </div>
+                </div>
+                <div class="proj-img project-block-3" onClick={this.showModal3}>
+                    <div class="proj-color-cover color-cover-3">
+                        <h1>FayaPay</h1>
+                    </div>
+                </div>
+                <div class="proj-img project-block-4" onClick={this.showModal4}>
+                    <div class="proj-color-cover color-cover-4">
+                        <h1>selormavoke.com</h1>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
 
-
-        // showModal1 = () => {
-
-        //     this.setState(this.setTrueState(this.states.state1.show));
-        // };
-        // showModal2 = () => {
-
-        //     this.setState(this.states[1] = true);
-        // };
-        // showModal3 = () => {
-
-        //     this.setState(this.states[2] = true);
-        // };
-        // showModal4 = () => {
-
-        //     this.setState(this.states[3] = true);
-        // };
-
-    }, {
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "section",
-                { id: "project_main" },
-                React.createElement(
-                    "div",
-                    { "class": "head-name-skills" },
-                    React.createElement(
-                        "h3",
-                        { "class": "center-header black-h h-skills" },
-                        "Things I've made."
-                    ),
-                    React.createElement(
-                        "p",
-                        { "class": "desc-sub-title black-h" },
-                        "Here are some projects I've been working on. "
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "proj-img project-block-1", onClick: this.update.bind(this) },
-                    React.createElement(
-                        "div",
-                        { "class": "proj-color-cover color-cover-1" },
-                        React.createElement(
-                            "h1",
-                            null,
-                            "Voice Chess"
-                        )
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "proj-img project-block-2", onClick: this.showModal2 },
-                    React.createElement(
-                        "div",
-                        { "class": "proj-color-cover color-cover-2" },
-                        React.createElement(
-                            "h1",
-                            null,
-                            "GPS Tracker"
-                        )
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "proj-img project-block-3", onClick: this.showModal3 },
-                    React.createElement(
-                        "div",
-                        { "class": "proj-color-cover color-cover-3" },
-                        React.createElement(
-                            "h1",
-                            null,
-                            "FayaPay"
-                        )
-                    )
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "proj-img project-block-4", onClick: this.showModal4 },
-                    React.createElement(
-                        "div",
-                        { "class": "proj-color-cover color-cover-4" },
-                        React.createElement(
-                            "h1",
-                            null,
-                            "selormavoke.com"
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return ProjectItems;
-}(React.Component);
-
-var Modal = function Modal(_ref) {
-    var handleClose = _ref.handleClose,
-        show = _ref.show,
-        children = _ref.children;
-
-    var showHideClassName = show ? "modal display-block" : "modal display-none";
-
-    return React.createElement(
-        "div",
-        { className: showHideClassName },
-        React.createElement(
-            "section",
-            { className: "modal-main" },
-            children,
-            React.createElement(
-                "button",
-                { onClick: handleClose },
-                "close"
-            )
-        )
+const Modal = ({ handleClose, show, children }) => {
+    const showHideClassName = show ? "modal display-block" : "modal display-none";
+    
+    return(
+        <div className={showHideClassName}>
+            <section className="modal-main">
+                {children}
+                <button onClick={handleClose}>close</button>
+            </section>
+        </div>
     );
 };
 
-var domContainer = document.querySelector('#page_containers');
+const domContainer = document.querySelector('#page_containers');
 ReactDOM.render(e(ProjectItems), domContainer);
