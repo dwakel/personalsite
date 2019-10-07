@@ -40,7 +40,7 @@ const e = React.createElement;
 //                 <div class="skills-block">
 //                 <div class="skills-block-1">
 //                         <ul class="ul-skills">
-//                         <img class="img-skills" src="./img/frontend.png"/>
+//                         <img class="img-skills" src="../src/img/frontend.png"/>
 //                                 <h3 class="subhead-skills">Front-end</h3>
 //                                 <p class="desc-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 //                                 <h4 class="sub-desc-head">Things I do</h4>
@@ -99,7 +99,7 @@ const e = React.createElement;
 //                 </div>
 //                 <div class="skills-block-2">
 //                         <ul class="ul-skills">
-//                         <img class="img-skills" src="./img/backend.png"/>
+//                         <img class="img-skills" src="../src/img/backend.png"/>
 //                                 <h3 class="subhead-skills">Back-end</h3>
 //                                 <p class="desc-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 //                                 <h4 class="sub-desc-head">What I build with</h4>
