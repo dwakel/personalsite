@@ -1,4 +1,4 @@
 [build]
 base = "personalsite/"
-publish = "personalsite/public/"
+publish = "personalsite/"
 command = "npm build"
