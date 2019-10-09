@@ -48,7 +48,7 @@ var e = React.createElement;
 //                 <div class="skills-block">
 //                 <div class="skills-block-1">
 //                         <ul class="ul-skills">
-//                         <img class="img-skills" src="./img/frontend.png"/>
+//                         <img class="img-skills" src="../src/img/frontend.png"/>
 //                                 <h3 class="subhead-skills">Front-end</h3>
 //                                 <p class="desc-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 //                                 <h4 class="sub-desc-head">Things I do</h4>
@@ -107,7 +107,7 @@ var e = React.createElement;
 //                 </div>
 //                 <div class="skills-block-2">
 //                         <ul class="ul-skills">
-//                         <img class="img-skills" src="./img/backend.png"/>
+//                         <img class="img-skills" src="../src/img/backend.png"/>
 //                                 <h3 class="subhead-skills">Back-end</h3>
 //                                 <p class="desc-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 //                                 <h4 class="sub-desc-head">What I build with</h4>
@@ -171,8 +171,16 @@ var ProjectItems = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (ProjectItems.__proto__ || Object.getPrototypeOf(ProjectItems)).call(this));
 
+        _this.states = { state1: { show: false }, state2: { show: false }, state3: { show: false }, state4: { show: false } };
+        _this.modalData = null;
+
+        _this.setTrueState = function (state) {
+            state = true;
+            return state;
+        };
+
         _this.hideModal = function () {
-            //this.setState({ show: false });
+            _this.setState({ show: false });
         };
 
         _this.state = {
@@ -181,22 +189,17 @@ var ProjectItems = function (_React$Component) {
         };
         return _this;
     }
-    //states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
-    // modalData = null;
-    // setTrueState = function(state){
-    //     state = true;
-    //     return state;
-    // }
-
 
     _createClass(ProjectItems, [{
         key: "update",
-        value: function update(e) {}
-        // this.setstate({
-        //     state1: this.refs.state1.value = true,
-        //     state2: this.refs.state2.value = true
-        // });
+        value: function update(e) {
+            this.setState({
+                state1: this.refs.state1 = true
+                //state2: this.refs.state2 = true
 
+            });
+            this.modelData = "it worked";
+        }
 
         // showModal1 = () => {
 
@@ -218,9 +221,29 @@ var ProjectItems = function (_React$Component) {
     }, {
         key: "render",
         value: function render() {
+
             return React.createElement(
                 "section",
                 { id: "project_main" },
+                React.createElement(
+                    Modal,
+                    { show: this.states.state1.show, handleClose: this.hideModal },
+                    React.createElement(
+                        "h1",
+                        null,
+                        "Case 1"
+                    ),
+                    console.log(this.modelData)
+                ),
+                React.createElement(
+                    Modal,
+                    { show: this.state.show, handleClose: this.hideModal },
+                    React.createElement(
+                        "h1",
+                        null,
+                        "Case 2"
+                    )
+                ),
                 React.createElement(
                     "div",
                     { "class": "head-name-skills" },

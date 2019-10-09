@@ -163,17 +163,19 @@ class ProjectItems extends React.Component {
             state2: false
         };
     }
-    //states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
-    // modalData = null;
-    // setTrueState = function(state){
-    //     state = true;
-    //     return state;
-    // }
+    states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
+    modalData = null;
+    setTrueState = function(state){
+        state = true;
+        return state;
+    }
     update(e){
-        // this.setstate({
-        //     state1: this.refs.state1.value = true,
-        //     state2: this.refs.state2.value = true
-        // });
+        this.setState({
+            state1: this.refs.state1 = true,
+            //state2: this.refs.state2 = true
+            
+        });
+        this.modelData = "it worked";
     }
    
     // showModal1 = () => {
@@ -193,22 +195,24 @@ class ProjectItems extends React.Component {
     //     this.setState(this.states[3] = true);
     // };
     hideModal = () => {
-        //this.setState({ show: false });
+        this.setState({ show: false });
     };
     
     render() {
+        
         return (
             <section id="project_main">
-                {/* <Modal show={this.states.state1} handleClose={this.hideModal}>
+                <Modal show={this.states.state1.show} handleClose={this.hideModal}>
                    <h1>Case 1</h1>
-                </Modal> */}
-                {/* <Modal show={this.state.show} handleClose={this.hideModal}>
+                   {console.log(this.modelData)}
+                </Modal> 
+                 <Modal show={this.state.show} handleClose={this.hideModal}>
                    <h1>Case 2</h1>
-                </Modal> */}
+                </Modal>
                 <div class="head-name-skills">
-                <h3 class="center-header black-h h-skills">Things I've made.</h3>
-                <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
-            </div>
+                    <h3 class="center-header black-h h-skills">Things I've made.</h3>
+                    <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
+                </div>
                 <div class="proj-img project-block-1" onClick={this.update.bind(this)}>
                     <div class="proj-color-cover color-cover-1">
                         <h1>Voice Chess</h1>
