@@ -194,7 +194,7 @@ var ProjectItems = function (_React$Component) {
         key: "update",
         value: function update(e) {
             this.setState({
-                state1: this.refs.state1 = true
+                state1: this.state1 = true
                 //state2: this.refs.state2 = true
 
             });
