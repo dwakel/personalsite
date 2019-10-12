@@ -71,7 +71,52 @@ ul {
     color: black;
     font-family: OCR A;
 }
-
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+  @-webkit-keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+.footicon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.foot {
+    font-family: OCR A;
+    font-size: 0.75em;
+}
+.using-blue {
+    color: #ed143d;
+}
 
 /* mobile phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -390,17 +435,16 @@ ul {
         font-size: 50px;
     }
     #footer-text {
-        margin: 12.5vh;
+        margin: 3em 0em 3em 0em;
+    }
+    .foot {
+        font-family: OCR A;
+        font-size: 25px;
     }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
     #header-container {
         display: grid;
         background-color: white;
@@ -671,7 +715,7 @@ ul {
         border-top-style: outset;
     }
     #footer-text {
-        margin: 12.5vh;
+        margin: 3em 0em 3em 0em;
     }
     .text-warning {
         color: rgb(0, 0, 0) !important;
@@ -831,6 +875,455 @@ ul {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
     }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    #header-container {
+        display: grid;
+        background-color: white;
+    }
+    
+    .header-item1 {
+        grid-column: 2 / 3;
+        align-items: center;
+    }
+    .header-item2 {
+        grid-column: 3 / 4;
+        align-items: center;
+        text-align: center;
+    }
+    .header-item3 {
+        grid-column:  4/ 5;
+        align-items: center;
+    }
+    .hi {
+        grid-column: 1 / 5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .sub-head1 {
+        float: right;
+    }
+    .sub-head2 {
+        text-align: center;
+    }
+    .sub-head3 {
+        float: left;
+    }
+    #cover_main {
+        width: 100%;
+        position: relative;
+        /* width: inherit; */
+        background: url(./img/8.jpg) no-repeat;
+        min-height: 100vh;
+        height: 100%;
+        background-size: cover;
+        
+        
+    }
+    #cover_card {
+        text-align: center;
+        position: relative;
+        height: 100vh;
+    }
+    #cover_layer {
+        /* display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr; */
+        
+    }/* renamed from cover_layer*/
+    .slide-in {
+        /* transform: translateX(100px); */
+        -webkit-transition: 2s; /* Safari */
+        transition: 2s;
+        transition-timing-function: ease;
+        background-color: rgba(5, 0, 161, .74);
+        opacity: .57;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    #color_cover {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        background-color: rgba(5, 0, 161, .4);
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: auto auto auto auto auto;
+        grid-row-gap: 2em;
+    }
+    .img_head {
+        border-radius: 10em;
+        height: 200px;
+        width: 200px;
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin-left: 25%;
+        background-image: url(./img/headerimg.png);
+        background-size: 200px
+        
+    }
+    .img_head:hover {
+        background-image: url(./img/headerimg2.png);
+    }
+    
+    #brand_name {
+        grid-row: 2/3;
+        font-family: Curlz MT;
+        color: #FFFFFF;
+        font-size: 120px;
+        grid-column: 2/5;
+        margin-top: 1.5em;
+    }
+    #cover_desc {
+        font-size: 29px;
+        font-family: Calibri;
+        grid-row: 3/4;
+        color: #FFFFFF;
+        grid-column: 2/5;
+    }
+    .social-icons {
+        display: inline-block;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .social-icons:hover {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        animation-iteration-count: 1;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+    
+    #social-media {
+        padding-bottom: 50px;
+        grid-row: 3/4;
+        grid-column: 2/5;
+        margin-top: 6.5em;
+    }
+    .m-slide-in {
+        -webkit-transition: 2s; /* Safari */
+        transition: 2s;
+        transition-timing-function: ease;
+        grid-row: 2 / 3;
+        font-size: 10vw;
+        font-family: Curlz MT;
+        color: #ffffff;
+    }
+    .subhead-skills {
+        text-align: center;
+    }
+    .desc-skills {
+        text-align: center;
+    }
+    .img-skills {
+        padding-left: 45%;
+        width: 64px;
+        height: 64px;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+    .star {
+        width: 26px;
+        height: 26px;;
+    }
+    .m-hide {
+        /* visibility: hidden; */
+    }
+    
+    #intro_main {
+        width: 100%;
+        position: relative;
+        /* width: inherit; */
+        /* background: url(./img/4.jpg) no-repeat; */
+        min-height: 110vh;
+        height: 100%;
+        background-size: cover;
+        background-color: #ed143d;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-bottom: 5em;
+    }
+    #intro_card {
+        text-align: center;
+        position: relative;
+        height: 110vh;
+    }
+    #intro_layer {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .intro-dets {
+        border-radius: 1%;
+        grid-column: 2 / 3;
+        grid-row: 2 / 6;
+        background-color:#14111257;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    #avatar {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        border: 3px solid #434242;
+    }
+    
+    .intro-text {
+        grid-column: 2 / 6;
+        color: lavenderblush;
+        font-family: 'Avenir LT Std 65 Medium';
+    }
+    
+    #gallery_main {
+        width: 100%;
+        position: relative;
+        background: url(./img/1.png) no-repeat;
+        /* background-color: #e9e9e5; */
+        min-height: 110vh;
+        height: 100%;
+        background-size: cover;
+    }
+    #gallery_card {
+        text-align: center;
+        position: relative;
+        background-color: #75472a69;
+    }
+    #gallery_layer {
+    }
+    .gallery-dets {
+        display: grid;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    }
+    .gallery-item {
+        display: flex;
+        flex-direction: row;
+        margin: 1%;
+    }
+    .gallery-item-head {
+        grid-row: 1 / 2; 
+    }
+    .gallery-item-1 {
+        grid-row: 2 / 3; 
+    }
+    .gallery-item-2 {
+        grid-row: 3 / 4;
+    }
+    .gallery-item-3 {
+        grid-row: 4 / 5;
+    }
+    .gallery-item > img {
+        width: 20vw;
+        margin: 0px 2vw;
+        border-radius: 3%;
+      }
+      /* .gallery-item > video {
+        width: 20vw;
+        margin: 0px 2vw;
+        border-radius: 3%;
+      } */
+      video {
+        width: 20vw;
+      }
+    .gallery-image {
+        
+    }
+    .gallery-video {
+        width: 20vw;
+        margin: 0px 2vw;
+        border-radius: 3%;
+        overflow: hidden;
+        height: 50vh;
+    }
+    .gallery-head {
+        font-family: cursive;
+        color: #fce4f8de;
+    }
+    .gallery-heading {
+        font-size: 6vh;
+    }
+    .gallery-subheading {
+        font-size: 3vh;
+    }
+    
+    footer {
+        position: static;
+        text-align: center;
+        width: 100%;
+        height: 25vh;
+        border-top-style: outset;
+    }
+    #footer-text {
+        margin: 3em 0em 3em 0em;
+    }
+    .text-warning {
+        color: rgb(0, 0, 0) !important;
+    }
+    .skill-name {
+        font-family: Calibri;
+        
+    }
+    .bold { 
+        font-family: Calibri;
+        font-weight: 900;
+    }
+    .ability-score {
+        float: right;
+    }
+    .skills-block {   
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* box-shadow: 0 5px 5px 0 rgba(218, 148, 173, 0.5), 0 0 0 1px #f3d0d7;
+        border: 1px solid #f3d0d7; */ 
+    } 
+    .ul-skills {
+        padding: 1em;
+    }
+    .skills-block-1 {
+        grid-column: 1 / 2;
+        background-color: #FFFFFF;
+        border-radius: 1em;
+        width: 400px;
+        height: 450px;
+        padding-bottom: 2em;
+        margin-right: 2em;
+        margin-left: -2em;
+    }
+    .skills-block-2 {
+        grid-column: 2 / 3;
+        background-color: #FFFFFF;
+        border-radius: 1em;
+        width: 400px;
+        height: 450px;
+        padding-bottom: 2em
+    }
+    .center-header {
+        text-align: center;
+        font-family: 'Avenir LT Std 65 Medium';
+    }
+    .head-name-skills {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        margin-top: 6em;
+        color: #FFFFFF;
+        padding-bottom: 3em;
+    }
+    .hr-skills {
+        grid-column: 2 / 4;
+    }
+    .li-skill {
+        margin: 1em;
+    }
+    
+    .h-skills {
+        grid-column: 2 / 4;
+        font-family: OCR A;
+        font-size: 24px;
+        font-style: normal;
+        padding-top: 2em;
+    }
+    .sub-desc-head {
+        color: #ed143d;
+        text-align: center;
+        font-weight: 900;
+        font-family: calibri;
+        font-size: 18px;
+    }
+    .desc-skills {
+    }
+    .other {
+        background: black;
+        color: white;
+        margin: 0.2em;
+        padding: 0.15em;
+        border-radius: 1em;
+        width: 100px;
+        font-family: OCR A;
+        font-size: 17px;
+    }
+    #project_main {
+        width: 100%;
+        position: relative;
+        /* width: inherit; */
+        /* background: url(./img/4.jpg) no-repeat; */
+        min-height: 110vh;
+        height: 100%;
+        background-size: cover;
+        background-color: #F2F1F8;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr; /*1fr 1fr;*/
+        padding-bottom: 3em;
+    }
+    /* .project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+    } */
+    .desc-sub-title {
+        text-align: center;
+        word-break: break-word;
+    }
+    .project-block-1 {
+        grid-column: 2 / 3;
+        border-radius: 1em;
+        border: 3px;
+        margin: 1em;
+        background-image: url(./img/vchess.png);
+    }
+    
+    
+    .project-block-2 {
+        grid-column: 3 / 4;
+        border-radius: 1em;
+        border: 3px;
+        margin: 1em;
+        background-image: url(./img/mapshot.png);
+    }
+    .project-block-3 {
+        grid-column: 2 / 3;
+        border-radius: 1em;
+        border: 3px;
+        margin: 1em;
+        background-image: url(./img/wits.png);
+    }
+    
+    
+    
+    .project-block-4 {
+        grid-column: 3 / 4;
+        border-radius: 1em;
+        border: 3px;
+        margin: 1em;
+        background-image: url(./img/personalsite.png);
+    }
+    
+    .proj-img {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+    }
+    .proj-color-cover {
+        color: white;
+        border-radius: 1em;
+        padding: 0.5%;
+        width: 300px;
+        height: 300px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+   
 }
 
 
