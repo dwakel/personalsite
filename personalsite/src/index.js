@@ -163,37 +163,41 @@ class ProjectItems extends React.Component {
             state2: false
         };
     }
-    states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
+    // states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
+    state = { state1: false, state2: false, state3: false, state4: false };
+
     modalData = null;
-    setTrueState = function(state){
-        state = true;
-        return state;
-    }
+    
     update(e){
-        this.setState({
-            state1: this.state1 = true,
-            //state2: this.refs.state2 = true
-            
-        });
-        this.modelData = "it worked";
+        console.log(e);
+        switch (e) {
+            case 1:
+                this.setState({
+                    state1: !this.state.state1
+                });
+                break;
+            case 2:
+                this.setState({
+                    state2: !this.state.state2
+                });
+                break;
+            case 3:
+                this.setState({
+                    state3: !this.state.state3
+                });
+                break;
+            case 4:
+                this.setState({
+                    state4: !this.state.state4
+                });
+                break;
+        
+            default:
+                break;
+        }
     }
    
-    // showModal1 = () => {
-        
-    //     this.setState(this.setTrueState(this.states.state1.show));
-    // };
-    // showModal2 = () => {
-       
-    //     this.setState(this.states[1] = true);
-    // };
-    // showModal3 = () => {
-        
-    //     this.setState(this.states[2] = true);
-    // };
-    // showModal4 = () => {
-        
-    //     this.setState(this.states[3] = true);
-    // };
+    
     hideModal = () => {
         this.setState({ show: false });
     };
@@ -202,34 +206,43 @@ class ProjectItems extends React.Component {
         
         return (
             <section id="project_main">
-                <Modal show={this.states.state1.show} handleClose={this.hideModal}>
+                <Modal show={this.state.state1} handleClose={this.update.bind(this, 1)}>
                    <h1>Case 1</h1>
-                   {console.log(this.modelData)}
+                   {console.log(this.state.state1)}
                 </Modal> 
-                 <Modal show={this.state.show} handleClose={this.hideModal}>
+                <Modal show={this.state.state2} handleClose={this.update.bind(this, 2)}>
                    <h1>Case 2</h1>
+                   {console.log(this.state.state2)}
+                </Modal>
+                <Modal show={this.state.state3} handleClose={this.update.bind(this, 3)}>
+                   <h1>Case 3</h1>
+                   {console.log(this.state.state3)}
+                </Modal>
+                <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
+                   <h1>Case 4</h1>
+                   {console.log(this.state.state4)}
                 </Modal>
                 <div class="head-name-skills">
                     <h3 class="center-header black-h h-skills">Things I've made.</h3>
                     <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
                 </div>
-                <div class="proj-img project-block-1" onClick={this.update.bind(this)}>
+                <div class="proj-img project-block-1" onClick={this.update.bind(this, 1)}>
                     <div class="proj-color-cover color-cover-1">
                         <h1>Voice Chess</h1>
                     </div>
                 </div>
-                <div class="proj-img project-block-2" onClick={this.showModal2}>
+                <div class="proj-img project-block-2" onClick={this.update.bind(this, 2)}>
                     <div class="proj-color-cover color-cover-2">
                         <h1>GPS Tracker</h1>
                         
                     </div>
                 </div>
-                <div class="proj-img project-block-3" onClick={this.showModal3}>
+                <div class="proj-img project-block-3" onClick={this.update.bind(this, 3)}>
                     <div class="proj-color-cover color-cover-3">
                         <h1>FayaPay</h1>
                     </div>
                 </div>
-                <div class="proj-img project-block-4" onClick={this.showModal4}>
+                <div class="proj-img project-block-4" onClick={this.update.bind(this, 4)}>
                     <div class="proj-color-cover color-cover-4">
                         <h1>selormavoke.com</h1>
                     </div>
