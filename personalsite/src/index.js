@@ -207,19 +207,47 @@ class ProjectItems extends React.Component {
         return (
             <section id="project_main">
                 <Modal show={this.state.state1} handleClose={this.update.bind(this, 1)}>
-                   <h1>Case 1</h1>
                    {console.log(this.state.state1)}
+                   <div class="modal-1">
+                       <img class="modal-1-c1" src="../src/img/vchess.png"/>
+                       <div class="modal-1-c2">
+                           <h2 class="modal-1-header">Voice Chess</h2>
+                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/VoiceChess">GitHub</a></div></div>
+                       </div>
+                   </div>
                 </Modal> 
                 <Modal show={this.state.state2} handleClose={this.update.bind(this, 2)}>
-                   <h1>Case 2</h1>
+                <div class="modal-1">
+                       <img class="modal-1-c1" src="../src/img/mapshot.png"/>
+                       <div class="modal-1-c2">
+                           <h2 class="modal-1-header">GPS Tracker</h2>
+                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/VehicleTrackingAPI">GitHub</a></div></div>
+                       </div>
+                   </div>
                    {console.log(this.state.state2)}
                 </Modal>
                 <Modal show={this.state.state3} handleClose={this.update.bind(this, 3)}>
-                   <h1>Case 3</h1>
+                <div class="modal-1">
+                       <img class="modal-1-c1" src="../src/img/wits.png"/>
+                       <div class="modal-1-c2">
+                           <h2 class="modal-1-header">FayaPay</h2>
+                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="http://fayapay.io">Visit</a></div></div>
+                       </div>
+                   </div>
                    {console.log(this.state.state3)}
                 </Modal>
                 <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
-                   <h1>Case 4</h1>
+                <div class="modal-1">
+                       <img class="modal-1-c1" src="../src/img/personalsite.png"/>
+                       <div class="modal-1-c2">
+                           <h2 class="modal-1-header">selormavoke.com</h2>
+                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/personalsite">GitHub</a></div></div>
+                       </div>
+                   </div>
                    {console.log(this.state.state4)}
                 </Modal>
                 <div class="head-name-skills">
@@ -259,7 +287,7 @@ const Modal = ({ handleClose, show, children }) => {
         <div className={showHideClassName}>
             <section className="modal-main">
                 {children}
-                <button onClick={handleClose}>close</button>
+                {/* <button onClick={handleClose}>close</button> */}
             </section>
         </div>
     );

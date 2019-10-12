@@ -227,20 +227,74 @@ var ProjectItems = function (_React$Component) {
                 React.createElement(
                     Modal,
                     { show: this.state.state1, handleClose: this.update.bind(this, 1) },
+                    console.log(this.state.state1),
                     React.createElement(
-                        "h1",
-                        null,
-                        "Case 1"
-                    ),
-                    console.log(this.state.state1)
+                        "div",
+                        { "class": "modal-1" },
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/vchess.png" }),
+                        React.createElement(
+                            "div",
+                            { "class": "modal-1-c2" },
+                            React.createElement(
+                                "h2",
+                                { "class": "modal-1-header" },
+                                "Voice Chess"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-text" },
+                                "This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-buttons" },
+                                React.createElement(
+                                    "div",
+                                    { "class": "modal-1-button-1" },
+                                    React.createElement(
+                                        "a",
+                                        { "class": "mb-text", href: "https://github.com/dwakel/VoiceChess" },
+                                        "GitHub"
+                                    )
+                                )
+                            )
+                        )
+                    )
                 ),
                 React.createElement(
                     Modal,
                     { show: this.state.state2, handleClose: this.update.bind(this, 2) },
                     React.createElement(
-                        "h1",
-                        null,
-                        "Case 2"
+                        "div",
+                        { "class": "modal-1" },
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/mapshot.png" }),
+                        React.createElement(
+                            "div",
+                            { "class": "modal-1-c2" },
+                            React.createElement(
+                                "h2",
+                                { "class": "modal-1-header" },
+                                "GPS Tracker"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-text" },
+                                "This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-buttons" },
+                                React.createElement(
+                                    "div",
+                                    { "class": "modal-1-button-1" },
+                                    React.createElement(
+                                        "a",
+                                        { "class": "mb-text", href: "https://github.com/dwakel/VehicleTrackingAPI" },
+                                        "GitHub"
+                                    )
+                                )
+                            )
+                        )
                     ),
                     console.log(this.state.state2)
                 ),
@@ -248,9 +302,36 @@ var ProjectItems = function (_React$Component) {
                     Modal,
                     { show: this.state.state3, handleClose: this.update.bind(this, 3) },
                     React.createElement(
-                        "h1",
-                        null,
-                        "Case 3"
+                        "div",
+                        { "class": "modal-1" },
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/wits.png" }),
+                        React.createElement(
+                            "div",
+                            { "class": "modal-1-c2" },
+                            React.createElement(
+                                "h2",
+                                { "class": "modal-1-header" },
+                                "FayaPay"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-text" },
+                                "This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-buttons" },
+                                React.createElement(
+                                    "div",
+                                    { "class": "modal-1-button-1" },
+                                    React.createElement(
+                                        "a",
+                                        { "class": "mb-text", href: "http://fayapay.io" },
+                                        "Visit"
+                                    )
+                                )
+                            )
+                        )
                     ),
                     console.log(this.state.state3)
                 ),
@@ -258,9 +339,36 @@ var ProjectItems = function (_React$Component) {
                     Modal,
                     { show: this.state.state4, handleClose: this.update.bind(this, 4) },
                     React.createElement(
-                        "h1",
-                        null,
-                        "Case 4"
+                        "div",
+                        { "class": "modal-1" },
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/personalsite.png" }),
+                        React.createElement(
+                            "div",
+                            { "class": "modal-1-c2" },
+                            React.createElement(
+                                "h2",
+                                { "class": "modal-1-header" },
+                                "selormavoke.com"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-text" },
+                                "This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces"
+                            ),
+                            React.createElement(
+                                "div",
+                                { "class": "modal-1-buttons" },
+                                React.createElement(
+                                    "div",
+                                    { "class": "modal-1-button-1" },
+                                    React.createElement(
+                                        "a",
+                                        { "class": "mb-text", href: "https://github.com/dwakel/personalsite" },
+                                        "GitHub"
+                                    )
+                                )
+                            )
+                        )
                     ),
                     console.log(this.state.state4)
                 ),
@@ -350,12 +458,7 @@ var Modal = function Modal(_ref) {
         React.createElement(
             "section",
             { className: "modal-main" },
-            children,
-            React.createElement(
-                "button",
-                { onClick: handleClose },
-                "close"
-            )
+            children
         )
     );
 };
