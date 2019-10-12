@@ -87,7 +87,7 @@ ul {
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
+}
   @-webkit-keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
@@ -104,7 +104,19 @@ ul {
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
+}
+.footicon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.foot {
+    font-family: OCR A;
+    font-size: 0.75em;
+}
+.using-blue {
+    color: #ed143d;
+}
 
 /* mobile phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -423,7 +435,11 @@ ul {
         font-size: 50px;
     }
     #footer-text {
-        margin: 12.5vh;
+        margin: 3em 0em 3em 0em;
+    }
+    .foot {
+        font-family: OCR A;
+        font-size: 25px;
     }
 }
 
@@ -699,7 +715,7 @@ ul {
         border-top-style: outset;
     }
     #footer-text {
-        margin: 12.5vh;
+        margin: 3em 0em 3em 0em;
     }
     .text-warning {
         color: rgb(0, 0, 0) !important;
@@ -1147,7 +1163,7 @@ ul {
         border-top-style: outset;
     }
     #footer-text {
-        margin: 12.5vh;
+        margin: 3em 0em 3em 0em;
     }
     .text-warning {
         color: rgb(0, 0, 0) !important;
@@ -1307,6 +1323,7 @@ ul {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
     }
+   
 }
 
 
