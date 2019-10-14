@@ -184,8 +184,6 @@ var ProjectItems = function (_React$Component) {
         };
         return _this;
     }
-    // states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
-
 
     _createClass(ProjectItems, [{
         key: "update",
@@ -267,7 +265,7 @@ var ProjectItems = function (_React$Component) {
                     React.createElement(
                         "div",
                         { "class": "modal-1" },
-                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/mapshot.png" }),
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/modal-mapshot.png" }),
                         React.createElement(
                             "div",
                             { "class": "modal-1-c2" },
@@ -341,7 +339,7 @@ var ProjectItems = function (_React$Component) {
                     React.createElement(
                         "div",
                         { "class": "modal-1" },
-                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/personalsite.png" }),
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/modal-personalsite.png" }),
                         React.createElement(
                             "div",
                             { "class": "modal-1-c2" },
@@ -458,6 +456,11 @@ var Modal = function Modal(_ref) {
         React.createElement(
             "section",
             { className: "modal-main" },
+            React.createElement(
+                "span",
+                { "class": "modal-close", onClick: handleClose },
+                "\xD7"
+            ),
             children
         )
     );

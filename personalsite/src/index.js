@@ -163,7 +163,7 @@ class ProjectItems extends React.Component {
             state2: false
         };
     }
-    // states = { state1: {show: false}, state2: {show: false}, state3: {show: false}, state4: {show: false} };
+    
     state = { state1: false, state2: false, state3: false, state4: false };
 
     modalData = null;
@@ -197,13 +197,12 @@ class ProjectItems extends React.Component {
         }
     }
    
-    
     hideModal = () => {
         this.setState({ show: false });
     };
-    
+  
     render() {
-        
+       
         return (
             <section id="project_main">
                 <Modal show={this.state.state1} handleClose={this.update.bind(this, 1)}>
@@ -219,7 +218,7 @@ class ProjectItems extends React.Component {
                 </Modal> 
                 <Modal show={this.state.state2} handleClose={this.update.bind(this, 2)}>
                 <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/mapshot.png"/>
+                       <img class="modal-1-c1" src="../src/img/modal-mapshot.png"/>
                        <div class="modal-1-c2">
                            <h2 class="modal-1-header">GPS Tracker</h2>
                            <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
@@ -241,7 +240,7 @@ class ProjectItems extends React.Component {
                 </Modal>
                 <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
                 <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/personalsite.png"/>
+                       <img class="modal-1-c1" src="../src/img/modal-personalsite.png"/>
                        <div class="modal-1-c2">
                            <h2 class="modal-1-header">selormavoke.com</h2>
                            <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
@@ -286,8 +285,8 @@ const Modal = ({ handleClose, show, children }) => {
     return(
         <div className={showHideClassName}>
             <section className="modal-main">
+                <span class="modal-close" onClick={handleClose}>&times;</span>
                 {children}
-                {/* <button onClick={handleClose}>close</button> */}
             </section>
         </div>
     );
