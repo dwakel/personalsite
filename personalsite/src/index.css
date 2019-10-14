@@ -57,6 +57,21 @@ ul {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Add Modal Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
     
 .display-block {
@@ -1363,13 +1378,15 @@ ul {
         color: #FFF;
     }
     .modal-1-button-1:hover {
-        background-color: #ed143d;
+        background-color: #FFF;
+        border: 1px solid #ed143d;
+        color: #ed143d;
     }
     .mb-text {
         vertical-align: middle;
         font-size: 20px;
         text-decoration: none;
-        color: #FFFFFF;
+        color: inherit;
     }
     .modal-close {
         color: #000000;
@@ -1384,4 +1401,5 @@ ul {
         text-decoration: none;
         cursor: pointer;
     }
+    
 }
