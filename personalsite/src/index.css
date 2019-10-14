@@ -1330,6 +1330,7 @@ ul {
         display: grid;
         grid-template-columns: 3fr 1fr;
         font-family: OCR A;
+        background-color: #f2f1f8;
     }
 
    .modal-1-c1 {
@@ -1359,6 +1360,10 @@ ul {
         border-radius: 20px;
         padding: 5px 0;
         text-align: center;
+        color: #FFF;
+    }
+    .modal-1-button-1:hover {
+        background-color: #ed143d;
     }
     .mb-text {
         vertical-align: middle;
