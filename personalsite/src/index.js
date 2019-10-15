@@ -255,23 +255,23 @@ class ProjectItems extends React.Component {
                 </div>
                 <div class="proj-img project-block-1" onClick={this.update.bind(this, 1)}>
                     <div class="proj-color-cover color-cover-1">
-                        <h1>Voice Chess</h1>
+                        <h1 class ="proj-text">Voice Chess</h1>
                     </div>
                 </div>
                 <div class="proj-img project-block-2" onClick={this.update.bind(this, 2)}>
                     <div class="proj-color-cover color-cover-2">
-                        <h1>GPS Tracker</h1>
+                        <h1 class ="proj-text">GPS Tracker</h1>
                         
                     </div>
                 </div>
                 <div class="proj-img project-block-3" onClick={this.update.bind(this, 3)}>
                     <div class="proj-color-cover color-cover-3">
-                        <h1>FayaPay</h1>
+                        <h1 class ="proj-text">FayaPay</h1>
                     </div>
                 </div>
                 <div class="proj-img project-block-4" onClick={this.update.bind(this, 4)}>
                     <div class="proj-color-cover color-cover-4">
-                        <h1>selormavoke.com</h1>
+                        <h1 class ="proj-text">selormavoke.com</h1>
                     </div>
                 </div>
             </section>

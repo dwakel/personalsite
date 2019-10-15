@@ -439,6 +439,10 @@ ul {
         grid-template-rows: 1fr 1fr 1fr;
     }
 
+    .proj-text {
+        font-size: 8vw
+    }
+
     /* end project main */
 
     footer {

@@ -392,7 +392,7 @@ var ProjectItems = function (_React$Component) {
                         { "class": "proj-color-cover color-cover-1" },
                         React.createElement(
                             "h1",
-                            null,
+                            { "class": "proj-text" },
                             "Voice Chess"
                         )
                     )
@@ -405,7 +405,7 @@ var ProjectItems = function (_React$Component) {
                         { "class": "proj-color-cover color-cover-2" },
                         React.createElement(
                             "h1",
-                            null,
+                            { "class": "proj-text" },
                             "GPS Tracker"
                         )
                     )
@@ -418,7 +418,7 @@ var ProjectItems = function (_React$Component) {
                         { "class": "proj-color-cover color-cover-3" },
                         React.createElement(
                             "h1",
-                            null,
+                            { "class": "proj-text" },
                             "FayaPay"
                         )
                     )
@@ -431,7 +431,7 @@ var ProjectItems = function (_React$Component) {
                         { "class": "proj-color-cover color-cover-4" },
                         React.createElement(
                             "h1",
-                            null,
+                            { "class": "proj-text" },
                             "selormavoke.com"
                         )
                     )
