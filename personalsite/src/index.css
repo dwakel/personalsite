@@ -506,18 +506,19 @@ ul {
     .modal-1-buttons {
         grid-row: 3 / 4;
     }
+   
     .modal-1-button-1 {
-        background-color: #ed143d;
+        background-color: #f2f1f8;
+        border: 1px solid #ed143d;
+        color: #ed143d;
         width: 13em;
         border-radius: 20px;
         padding: 5px 0;
         text-align: center;
-        color: #FFF;
     }
     .modal-1-button-1:hover {
-        background-color: #FFF;
-        border: 1px solid #ed143d;
-        color: #ed143d;
+        background-color: #ed143d;
+        color: #f2f1f8;
     }
     .mb-text {
         vertical-align: middle;
@@ -1453,17 +1454,17 @@ ul {
         grid-row: 3 / 4;
     }
     .modal-1-button-1 {
-        background-color: #ed143d;
         width: 100px;
         border-radius: 20px;
         padding: 5px 0;
         text-align: center;
-        color: #FFF;
-    }
-    .modal-1-button-1:hover {
-        background-color: #FFF;
+        background-color: #f2f1f8;
         border: 1px solid #ed143d;
         color: #ed143d;
+    }
+    .modal-1-button-1:hover {
+        background-color: #ed143d;
+        color: #f2f1f8;
     }
     .mb-text {
         vertical-align: middle;
