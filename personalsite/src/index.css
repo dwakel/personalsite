@@ -49,7 +49,7 @@ ul {
     background: rgba(0, 0, 0, 0.6);
 }
     
-/* .modal-main {
+.modal-main {
     position:fixed;
     background: white;
     width: 80%;
@@ -62,7 +62,7 @@ ul {
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
-} */
+}
 /* Add Modal Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
