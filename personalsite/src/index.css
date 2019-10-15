@@ -49,7 +49,7 @@ ul {
     background: rgba(0, 0, 0, 0.6);
 }
     
-.modal-main {
+/* .modal-main {
     position:fixed;
     background: white;
     width: 80%;
@@ -62,7 +62,7 @@ ul {
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
-}
+} */
 /* Add Modal Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -458,6 +458,85 @@ ul {
         font-family: OCR A;
         font-size: 25px;
     }
+    .modal-main {
+        position:fixed;
+        background: white;
+        width: 90%;
+        height: auto;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    .modal-1 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        font-family: OCR A;
+        background-color: #f2f1f8;
+    }
+
+   .modal-1-c1 {
+    grid-row: 1 / 2; 
+    width: 90.7vw;
+    height: 44vh;
+   }
+   .modal-1-c2 {
+        grid-row: 2 / 3;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: 1fr auto 1fr;
+        margin: 0em 1.5em 0px 1.5em;
+    }
+    .modal-1-header {
+        grid-row: 1 / 2;
+        font-size: 3em;
+    }
+    .modal-1-text {
+        grid-row: 2 / 3;
+    font-size: 4vw;
+    }
+    .modal-1-buttons {
+        grid-row: 3 / 4;
+    }
+    .modal-1-button-1 {
+        background-color: #ed143d;
+        width: 13em;
+        border-radius: 20px;
+        padding: 5px 0;
+        text-align: center;
+        color: #FFF;
+    }
+    .modal-1-button-1:hover {
+        background-color: #FFF;
+        border: 1px solid #ed143d;
+        color: #ed143d;
+    }
+    .mb-text {
+        vertical-align: middle;
+        font-size: 3em;
+        text-decoration: none;
+        color: inherit;
+    }
+    .modal-close {
+        color: #000000;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin: -50px;
+        margin: -1em -0.6em 0em 0em;
+    }
+    .modal-close:hover,
+    .modal-close:focus {
+        color: #c0c0c3;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+   
 }
 
 /* iPads (portrait and landscape) ----------- */
