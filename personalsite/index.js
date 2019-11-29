@@ -339,7 +339,7 @@ var ProjectItems = function (_React$Component) {
                     React.createElement(
                         "div",
                         { "class": "modal-1" },
-                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/modal-personalsite.png" }),
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/modal-personalsite.jpg" }),
                         React.createElement(
                             "div",
                             { "class": "modal-1-c2" },
