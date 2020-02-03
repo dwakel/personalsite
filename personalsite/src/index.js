@@ -240,11 +240,11 @@ class ProjectItems extends React.Component {
                 </Modal>
                 <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
                 <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/modal-personalsite.png"/>
+                       <img class="modal-1-c1" src="../src/img/modal-personalsite.jpg"/>
                        <div class="modal-1-c2">
-                           <h2 class="modal-1-header">selormavoke.com</h2>
-                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
-                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/personalsite">GitHub</a></div></div>
+                           <h2 class="modal-1-header">Trivial.Utility</h2>
+                           <div class="modal-1-text">This is a Nuget package library that constains methods to help help develpers perform simple task</div>
+                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/Trivial.Utility">GitHub</a></div></div>
                        </div>
                    </div>
                    {console.log(this.state.state4)}
