@@ -314,7 +314,7 @@ var ProjectItems = function (_React$Component) {
                             React.createElement(
                                 "div",
                                 { "class": "modal-1-text" },
-                                "This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces"
+                                "Worked with a team of developers at WITS, as a fullstack engineer in developing Fayapay. FayaPay is a payment system that make integration of payments into business by developers and merchants easy"
                             ),
                             React.createElement(
                                 "div",
@@ -339,19 +339,19 @@ var ProjectItems = function (_React$Component) {
                     React.createElement(
                         "div",
                         { "class": "modal-1" },
-                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/modal-personalsite.jpg" }),
+                        React.createElement("img", { "class": "modal-1-c1", src: "../src/img/modal-nuget.png" }),
                         React.createElement(
                             "div",
                             { "class": "modal-1-c2" },
                             React.createElement(
                                 "h2",
                                 { "class": "modal-1-header" },
-                                "selormavoke.com"
+                                "Trivial.Utility"
                             ),
                             React.createElement(
                                 "div",
                                 { "class": "modal-1-text" },
-                                "This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces"
+                                "This is a Nuget package library that constains methods to help help develpers perform simple task"
                             ),
                             React.createElement(
                                 "div",
@@ -361,8 +361,8 @@ var ProjectItems = function (_React$Component) {
                                     { "class": "modal-1-button-1" },
                                     React.createElement(
                                         "a",
-                                        { "class": "mb-text", href: "https://github.com/dwakel/personalsite" },
-                                        "GitHub"
+                                        { "class": "mb-text", href: "https://www.nuget.org/packages/Trivial.Utility/" },
+                                        "View"
                                     )
                                 )
                             )
@@ -432,7 +432,7 @@ var ProjectItems = function (_React$Component) {
                         React.createElement(
                             "h1",
                             { "class": "proj-text" },
-                            "selormavoke.com"
+                            "Trivial.Utility"
                         )
                     )
                 )

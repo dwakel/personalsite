@@ -232,7 +232,7 @@ class ProjectItems extends React.Component {
                        <img class="modal-1-c1" src="../src/img/wits.png"/>
                        <div class="modal-1-c2">
                            <h2 class="modal-1-header">FayaPay</h2>
-                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+                           <div class="modal-1-text">Worked with a team of developers at WITS, as a fullstack engineer in developing Fayapay. FayaPay is a payment system that make integration of payments into business by developers and merchants easy</div>
                            <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="http://fayapay.io">Visit</a></div></div>
                        </div>
                    </div>
@@ -240,11 +240,11 @@ class ProjectItems extends React.Component {
                 </Modal>
                 <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
                 <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/modal-personalsite.jpg"/>
+                       <img class="modal-1-c1" src="../src/img/modal-nuget.png"/>
                        <div class="modal-1-c2">
                            <h2 class="modal-1-header">Trivial.Utility</h2>
                            <div class="modal-1-text">This is a Nuget package library that constains methods to help help develpers perform simple task</div>
-                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/Trivial.Utility">GitHub</a></div></div>
+                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://www.nuget.org/packages/Trivial.Utility/">View</a></div></div>
                        </div>
                    </div>
                    {console.log(this.state.state4)}
@@ -271,7 +271,7 @@ class ProjectItems extends React.Component {
                 </div>
                 <div class="proj-img project-block-4" onClick={this.update.bind(this, 4)}>
                     <div class="proj-color-cover color-cover-4">
-                        <h1 class ="proj-text">selormavoke.com</h1>
+                        <h1 class ="proj-text">Trivial.Utility</h1>
                     </div>
                 </div>
             </section>
