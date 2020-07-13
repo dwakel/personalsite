@@ -1,5 +1,5 @@
 [build]
-base = "personalsite/"
+base = "./"
 publish = "personalsite/"
 
 [[redirects]]
