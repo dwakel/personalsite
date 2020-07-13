@@ -155,142 +155,142 @@ const e = React.createElement;
 //     }
 // }
 
-class ProjectItems extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            state1: false,
-            state2: false
-        };
-    }
+// class ProjectItems extends React.Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             state1: false,
+//             state2: false
+//         };
+//     }
     
-    state = { state1: false, state2: false, state3: false, state4: false };
+//     state = { state1: false, state2: false, state3: false, state4: false };
 
-    modalData = null;
+//     modalData = null;
     
-    update(e){
-        console.log(e);
-        switch (e) {
-            case 1:
-                this.setState({
-                    state1: !this.state.state1
-                });
-                break;
-            case 2:
-                this.setState({
-                    state2: !this.state.state2
-                });
-                break;
-            case 3:
-                this.setState({
-                    state3: !this.state.state3
-                });
-                break;
-            case 4:
-                this.setState({
-                    state4: !this.state.state4
-                });
-                break;
+//     update(e){
+//         console.log(e);
+//         switch (e) {
+//             case 1:
+//                 this.setState({
+//                     state1: !this.state.state1
+//                 });
+//                 break;
+//             case 2:
+//                 this.setState({
+//                     state2: !this.state.state2
+//                 });
+//                 break;
+//             case 3:
+//                 this.setState({
+//                     state3: !this.state.state3
+//                 });
+//                 break;
+//             case 4:
+//                 this.setState({
+//                     state4: !this.state.state4
+//                 });
+//                 break;
         
-            default:
-                break;
-        }
-    }
+//             default:
+//                 break;
+//         }
+//     }
    
-    hideModal = () => {
-        this.setState({ show: false });
-    };
+//     hideModal = () => {
+//         this.setState({ show: false });
+//     };
   
-    render() {
+//     render() {
        
-        return (
-            <section id="project_main">
-                <Modal show={this.state.state1} handleClose={this.update.bind(this, 1)}>
-                   {console.log(this.state.state1)}
-                   <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/vchess.png"/>
-                       <div class="modal-1-c2">
-                           <h2 class="modal-1-header">Voice Chess</h2>
-                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
-                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/VoiceChess">GitHub</a></div></div>
-                       </div>
-                   </div>
-                </Modal> 
-                <Modal show={this.state.state2} handleClose={this.update.bind(this, 2)}>
-                <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/modal-mapshot.png"/>
-                       <div class="modal-1-c2">
-                           <h2 class="modal-1-header">GPS Tracker</h2>
-                           <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
-                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/VehicleTrackingAPI">GitHub</a></div></div>
-                       </div>
-                   </div>
-                   {console.log(this.state.state2)}
-                </Modal>
-                <Modal show={this.state.state3} handleClose={this.update.bind(this, 3)}>
-                <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/wits.png"/>
-                       <div class="modal-1-c2">
-                           <h2 class="modal-1-header">FayaPay</h2>
-                           <div class="modal-1-text">Worked with a team of developers at WITS, as a fullstack engineer in developing Fayapay. FayaPay is a payment system that make integration of payments into business by developers and merchants easy</div>
-                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="http://fayapay.io">Visit</a></div></div>
-                       </div>
-                   </div>
-                   {console.log(this.state.state3)}
-                </Modal>
-                <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
-                <div class="modal-1">
-                       <img class="modal-1-c1" src="../src/img/modal-nuget.png"/>
-                       <div class="modal-1-c2">
-                           <h2 class="modal-1-header">Trivial.Utility</h2>
-                           <div class="modal-1-text">This is a Nuget package library that constains methods to help help develpers perform simple task</div>
-                           <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://www.nuget.org/packages/Trivial.Utility/">View</a></div></div>
-                       </div>
-                   </div>
-                   {console.log(this.state.state4)}
-                </Modal>
-                <div class="head-name-skills">
-                    <h3 class="center-header black-h h-skills">Things I've made.</h3>
-                    <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
-                </div>
-                <div class="proj-img project-block-1" onClick={this.update.bind(this, 1)}>
-                    <div class="proj-color-cover color-cover-1">
-                        <h1 class ="proj-text">Voice Chess</h1>
-                    </div>
-                </div>
-                <div class="proj-img project-block-2" onClick={this.update.bind(this, 2)}>
-                    <div class="proj-color-cover color-cover-2">
-                        <h1 class ="proj-text">GPS Tracker</h1>
+//         return (
+//             <section id="project_main">
+//                 <Modal show={this.state.state1} handleClose={this.update.bind(this, 1)}>
+//                    {console.log(this.state.state1)}
+//                    <div class="modal-1">
+//                        <img class="modal-1-c1" src="../src/img/vchess.png"/>
+//                        <div class="modal-1-c2">
+//                            <h2 class="modal-1-header">Voice Chess</h2>
+//                            <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+//                            <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/VoiceChess">GitHub</a></div></div>
+//                        </div>
+//                    </div>
+//                 </Modal> 
+//                 <Modal show={this.state.state2} handleClose={this.update.bind(this, 2)}>
+//                 <div class="modal-1">
+//                        <img class="modal-1-c1" src="../src/img/modal-mapshot.png"/>
+//                        <div class="modal-1-c2">
+//                            <h2 class="modal-1-header">GPS Tracker</h2>
+//                            <div class="modal-1-text">This Chess game is a voice controlled 2 Player chess game. It still provides the generic mouse click and select method to move chess pieces</div>
+//                            <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://github.com/dwakel/VehicleTrackingAPI">GitHub</a></div></div>
+//                        </div>
+//                    </div>
+//                    {console.log(this.state.state2)}
+//                 </Modal>
+//                 <Modal show={this.state.state3} handleClose={this.update.bind(this, 3)}>
+//                 <div class="modal-1">
+//                        <img class="modal-1-c1" src="../src/img/wits.png"/>
+//                        <div class="modal-1-c2">
+//                            <h2 class="modal-1-header">FayaPay</h2>
+//                            <div class="modal-1-text">Worked with a team of developers at WITS, as a fullstack engineer in developing Fayapay. FayaPay is a payment system that make integration of payments into business by developers and merchants easy</div>
+//                            <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="http://fayapay.io">Visit</a></div></div>
+//                        </div>
+//                    </div>
+//                    {console.log(this.state.state3)}
+//                 </Modal>
+//                 <Modal show={this.state.state4} handleClose={this.update.bind(this, 4)}>
+//                 <div class="modal-1">
+//                        <img class="modal-1-c1" src="../src/img/modal-nuget.png"/>
+//                        <div class="modal-1-c2">
+//                            <h2 class="modal-1-header">Trivial.Utility</h2>
+//                            <div class="modal-1-text">This is a Nuget package library that constains methods to help help develpers perform simple task</div>
+//                            <div class="modal-1-buttons"><div class="modal-1-button-1"><a class="mb-text" href="https://www.nuget.org/packages/Trivial.Utility/">View</a></div></div>
+//                        </div>
+//                    </div>
+//                    {console.log(this.state.state4)}
+//                 </Modal>
+//                 <div class="head-name-skills">
+//                     <h3 class="center-header black-h h-skills">Things I've made.</h3>
+//                     <p class="desc-sub-title black-h">Here are some projects I've been working on. </p>
+//                 </div>
+//                 <div class="proj-img project-block-1" onClick={this.update.bind(this, 1)}>
+//                     <div class="proj-color-cover color-cover-1">
+//                         <h1 class ="proj-text">Voice Chess</h1>
+//                     </div>
+//                 </div>
+//                 <div class="proj-img project-block-2" onClick={this.update.bind(this, 2)}>
+//                     <div class="proj-color-cover color-cover-2">
+//                         <h1 class ="proj-text">GPS Tracker</h1>
                         
-                    </div>
-                </div>
-                <div class="proj-img project-block-3" onClick={this.update.bind(this, 3)}>
-                    <div class="proj-color-cover color-cover-3">
-                        <h1 class ="proj-text">FayaPay</h1>
-                    </div>
-                </div>
-                <div class="proj-img project-block-4" onClick={this.update.bind(this, 4)}>
-                    <div class="proj-color-cover color-cover-4">
-                        <h1 class ="proj-text">Trivial.Utility</h1>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
+//                     </div>
+//                 </div>
+//                 <div class="proj-img project-block-3" onClick={this.update.bind(this, 3)}>
+//                     <div class="proj-color-cover color-cover-3">
+//                         <h1 class ="proj-text">FayaPay</h1>
+//                     </div>
+//                 </div>
+//                 <div class="proj-img project-block-4" onClick={this.update.bind(this, 4)}>
+//                     <div class="proj-color-cover color-cover-4">
+//                         <h1 class ="proj-text">Trivial.Utility</h1>
+//                     </div>
+//                 </div>
+//             </section>
+//         );
+//     }
+// }
 
-const Modal = ({ handleClose, show, children }) => {
-    const showHideClassName = show ? "modal display-block" : "modal display-none";
+// const Modal = ({ handleClose, show, children }) => {
+//     const showHideClassName = show ? "modal display-block" : "modal display-none";
     
-    return(
-        <div className={showHideClassName}>
-            <section className="modal-main">
-                <span class="modal-close" onClick={handleClose}>&times;</span>
-                {children}
-            </section>
-        </div>
-    );
-};
+//     return(
+//         <div className={showHideClassName}>
+//             <section className="modal-main">
+//                 <span class="modal-close" onClick={handleClose}>&times;</span>
+//                 {children}
+//             </section>
+//         </div>
+//     );
+// };
 
-const domContainer = document.querySelector('#page_containers');
-ReactDOM.render(e(ProjectItems), domContainer);
+// const domContainer = document.querySelector('#page_containers');
+// ReactDOM.render(e(ProjectItems), domContainer);
