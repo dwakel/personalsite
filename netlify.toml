@@ -1,7 +1,6 @@
 [build]
 base = "personalsite/"
 publish = "personalsite/"
-command = "npm build"
 
 [[redirects]]
 from = "/*"
