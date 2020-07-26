@@ -228,7 +228,7 @@ ul {
     
     #brand_name {
         grid-row: 2/3;
-        font-family:papyrus, "Curlz MT", cursive, "Comic Sans MS";
+        font-family: papyrus, wheat, plato, "Curlz MT", cursive, "Comic Sans MS";
         color: #FFFFFF;
         font-size: 7rem;
         grid-column: 2/5;
@@ -707,7 +707,7 @@ ul {
     
     #brand_name {
         grid-row: 2/3;
-        font-family: papyrus, "Curlz MT", cursive, "Comic Sans MS";
+        font-family: papyrus, wheat, plato, "Curlz MT", cursive, "Comic Sans MS";
         color: #FFFFFF;
         font-size: 6vh;
         grid-column: 2/5;
@@ -1125,7 +1125,7 @@ ul {
     
     #brand_name {
         grid-row: 2/3;
-        font-family: papyrus, "Curlz MT", cursive, "Comic Sans MS";
+        font-family: papyrus, wheat, plato, "Curlz MT", cursive, "Comic Sans MS";
         color: #FFFFFF;
         font-size: 7vh;
         grid-column: 2/5;
