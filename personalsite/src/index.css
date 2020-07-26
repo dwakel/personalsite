@@ -185,28 +185,29 @@ ul {
         grid-row-gap: 2em;
     }
     .img_head {
-        border-radius: 11em;
-        height: 170px;
-        width: 170px;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
         grid-row: 1/3;
         grid-column: 1/4;
-        margin-left: 27%;
         background-image: url(./img/headerimg.png);
         background-size: cover;
-        margin-top: 10%;
+        margin-top: 20%;
+        margin-left: 45%;
     }
     
     #brand_name {
         grid-row: 2/3;
         font-family: Curlz MT;
         color: #FFFFFF;
-        font-size: 36px;
+        font-size: 7vh;
         grid-column: 2/5;
-        margin-top: 6.5em;
+        margin-top: 5em;
         margin-right: 1em;
+        height: 1em;
     }
     #cover_desc {
-        font-size: 19px;
+        font-size: 4vh;
         font-family: Calibri;
         grid-row: 3/4;
         color: #FFFFFF;
@@ -214,20 +215,19 @@ ul {
     }
     .social-icons {
         display: inline-block;
-        margin-left: 0.5em;
-        margin-right: 1.5em;
-        width: 12px;
+        margin-right: 10em;
+        width: 2vh;
     }
     #social-media {
         padding-bottom: 17px;
         grid-row: 3/4;
         grid-column: 2/5;
-        margin-top: 2.5em;
+        margin-top: 17.5em;
         margin-left: -4em;
     }
     .svg_icons {
-        width: 2em;
-        height: 4em;
+        width: 5em;
+        height: 5em;
     }
     /* end main */
 
@@ -456,14 +456,19 @@ ul {
         border-top-style: outset;
     }
     #foot-text {
-        font-size: 15px;
+        font-size: 3em;
     }
     #footer-text {
         margin: 3em 0em 3em 0em;
     }
     .foot {
         font-family: OCR A;
-        font-size: 11px;
+        font-size: 3em;
+    }
+    .footicon {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
     }
     .modal-main {
         position:fixed;
