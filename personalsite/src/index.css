@@ -133,6 +133,10 @@ ul {
     color: #ed143d;
 }
 
+#medium-widget {
+    margin-left: 25em;
+    margin-right: 25em;
+}
 /* mobile phones */
 
 /* Desktops and laptops ----------- */
@@ -667,7 +671,10 @@ ul {
         height: 100vh;
     }
     /* end header css */
-
+    #medium-widget {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
     /* main */
     #cover_main {
         width: 100%;
